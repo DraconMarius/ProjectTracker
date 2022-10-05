@@ -6,15 +6,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
     <title>Project Tracker</title>
 </head>
 
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Porject Tracker</h1>
+            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+    </div>
+    </hr>
+    <!-- <div class="row"> -->
+    <form class="float-left m-2">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Project Name</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="projectType">
+            <label for="exampleFormControlSelect1">Project Type</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Web App (FrontEnd)</option>
+                <option>Web App (BackEnd)</option>
+                <option>Mobile Application</option>
+                <option>JavaScript Refactor</option>
+                <option>HTML Refactor</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Date Picker</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+        </div>
+        <div class="hrRate">
+            <label for="exampleFormControlSelect1">Hourly Rate</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>25</option>
+                <option>50</option>
+                <option>75</option>
+                <option>100</option>
+                <option>125</option>
+            </select>
+        </div>
+        <button type="button" class="btn btn-secondary m-3">Submit</button>
+    </form>
+    <div class="row">
+        <table class="table table-bordered table-dark col-12 ml-3  ">
+            <thead>
+                <tr>
+                    <th scope="col-2">Project Name</th>
+                    <th scope="col-3">Project Type</th>
+                    <th scope="col-2">Hourly Rates</th>
+                    <th scope="col-3">Due Dates</th>
+                    <th scope="col-2">Days Until Due</th>
+                    <th scope="col-1">"X"</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <!-- <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row"></th>
+                    <td colspan="2"></td>
+                    <td></td> -->
+                <!-- </tr> -->
+            </tbody>
+        </table>
+    </div>
 
 
-
-
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
